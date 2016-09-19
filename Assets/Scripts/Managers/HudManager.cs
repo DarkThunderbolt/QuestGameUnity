@@ -7,7 +7,6 @@ using Assets;
 public class HudManager : MonoBehaviour
 {
     [SerializeField]
-    public AGameAction[] actionTestList;
     bool quest = false;
     bool inv = false;
     public  GameObject questQ;

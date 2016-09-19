@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Assets;
 
 [RequireComponent(typeof(Collider2D))]
 public class DialogGive : MonoBehaviour, Assets.IUseble
 {
-    public string quest;
+    public Dialogue quest;
     private DialogManager dm;
 
     private void Start ()
@@ -14,6 +15,6 @@ public class DialogGive : MonoBehaviour, Assets.IUseble
 
     public void Use()
     {
-       // dm.GetDialog(quest);
+        dm.GetDialog(quest);
     }
 }
