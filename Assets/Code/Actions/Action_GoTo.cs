@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using UnityEditor;
 using UnityEngine;
 
 namespace Assets
@@ -15,6 +16,11 @@ namespace Assets
         public override void DoAction()
         {
             GameObject.FindObjectOfType<PlayerMouseController>().MoveToPoint(Place);
+        }
+
+        public override void DrawInspector()
+        {
+            Place = EditorGUILayout.ObjectField(Place, typeof(Transform)) as Transform;
         }
     }
 }

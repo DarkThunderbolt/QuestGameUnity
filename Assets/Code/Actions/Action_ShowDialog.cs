@@ -17,5 +17,10 @@ namespace Assets
         {
             GameObject.FindObjectOfType<DialogManager>().GetDialog(Dialog);
         }
+
+        public override void DrawInspector()
+        {
+            //EditorGUILayout.ObjectField(TakenItem, typeof(Item));
+        }
     }
 }

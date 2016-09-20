@@ -17,5 +17,9 @@ namespace Assets
         {
 
         }
+        public override void DrawInspector()
+        {
+            
+        }
     }
 }

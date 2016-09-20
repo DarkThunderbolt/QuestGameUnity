@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using UnityEditor;
 using UnityEngine;
 
 namespace Assets
@@ -15,6 +16,11 @@ namespace Assets
         public override void DoAction()
         {
             GameObject.FindObjectOfType<ItemManager>().GetItem(TakenItem);
+        }
+
+        public override void DrawInspector()
+        {
+            EditorGUILayout.ObjectField(TakenItem, typeof(Item));
         }
     }
 }

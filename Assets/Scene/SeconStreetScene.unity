@@ -421,7 +421,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22494642, guid: 4e01bf0571186f2449618e590ef84d86, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 354
+      value: 330
       objectReference: {fileID: 0}
     - target: {fileID: 22494642, guid: 4e01bf0571186f2449618e590ef84d86, type: 2}
       propertyPath: m_AnchoredPosition.y
@@ -429,7 +429,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22494642, guid: 4e01bf0571186f2449618e590ef84d86, type: 2}
       propertyPath: m_SizeDelta.x
-      value: 708
+      value: 660
       objectReference: {fileID: 0}
     - target: {fileID: 22494642, guid: 4e01bf0571186f2449618e590ef84d86, type: 2}
       propertyPath: m_SizeDelta.y
@@ -1285,6 +1285,7 @@ GameObject:
   - 4: {fileID: 2064723593}
   - 212: {fileID: 2064723592}
   - 61: {fileID: 2064723591}
+  - 114: {fileID: 2064723590}
   m_Layer: 0
   m_Name: SnowMan
   m_TagString: Untagged
@@ -1292,6 +1293,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &2064723590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2064723589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1b8084bbfa10ea49b740a8ade0d2095, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Actions: {fileID: 0}
 --- !u!61 &2064723591
 BoxCollider2D:
   m_ObjectHideFlags: 0

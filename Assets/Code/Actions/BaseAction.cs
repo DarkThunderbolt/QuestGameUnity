@@ -8,13 +8,17 @@ using UnityEngine;
 namespace Assets
 {
     [Serializable]
-    public class BaseAction
+    public abstract class BaseAction : ScriptableObject
     {
         public bool ActionComplidet = false;
 
-        public virtual void DoAction() { }
+        public abstract void DoAction();
+
+        public void OnEnable() { hideFlags = HideFlags.HideAndDontSave; }
 
         public BaseAction() { }
+
+        public abstract void DrawInspector();
     }
 
 
